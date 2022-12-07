@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space Grotesk">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            background-image: url("bg-main-desktop.png");
+            background-repeat: no-repeat;
+            width: 1440px;
+            height: 900px;
+            position: absolute;
+            font-family: "Space Grotesk";
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+        .frontCard {
+            position: relative;
+            background-image: url("bg-card-front.png");
+            width: 447px;
+            height: 245px;
+            box-sizing: border-box;
+            padding: 30px 30px;
+            margin: 185px 0 0 165px;
+            color: white;
+        }
+        .logo {
+            position: relative;
+            width: 80px;
+        }
+        .round1 {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: hsl(0, 0%, 100%);
+        }
+        .round2 {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 17px;
+            height: 17px;
+            border: 1px solid;
+            border-radius: 50%;
+            border-color: hsl(0, 0%, 100%);
+        }
+        .text {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            left: 30px;
+        }
+        .text p {
+            display: inline-block;
+        }
+        .backCard {
+            position: absolute;
+            background-image: url("bg-card-back.png");
+            width: 447px;
+            height: 245px;
+            margin: 35px 0 0 260px;
+            color: hsl(0, 0%, 100%);
+            font-size: 13px;
+        }
+        .backCard p {
+            margin: 110px 350px ;
+        }
+        .form {
+            position: relative;
+            width: 380px;
+            height: 350px;
+            margin: 275px 230px auto auto;
+            font-weight: bold;
+        }
+        .form input {
+            border-radius: 10px;
+            width: 100%;
+            height: 40px;
+            border: 1px solid;
+            border-color: hsl(279, 6%, 55%);
+            color: hsl(279, 6%, 55%);
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Space Grotesk";
+            margin: 10px 0 25px 0;
+            padding: 10px 0 10px 10px;
+        }
+
+        .form button{
+            position: absolute;
+            border-radius: 10px;
+            border: 1px solid;
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Space Grotesk";
+            color: hsl(0, 0%, 100%);
+            background-color: hsl(278, 68%, 11%);
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+    <body>
+        <div class="main">
+            <div style="display: inline-block; width: 50%;">
+                <div class="frontCard">
+                    <div class="logo">
+                        <div class="round1">
+                        </div>
+                        <div class="round2">
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p style="font-size: 29px; margin-bottom: 30px;">0000 0000 0000 0000</p>
+                        <p style="font-size: 13px;">JANE APPLESEED</p>
+                        <p style="font-size: 13px; float: right;">00/00</p>
+                    </div>
+                </div>
+                <div class="backCard">
+                    <p>000</p>
+                </div>
+            </div>
+            <div style="display: inline-block; width: 50%; position: absolute;">
+                <div class="form">
+                    <p>CARDHOLDER NAME</p>
+                    <input type="text" placeholder="e.g. Jane Appleseed">
+                    <p>CARD NUMBER</p>
+                    <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+                    <div style="width: 49%; display: inline-block;">
+                        <p>EXP. DATE (MM/YY)</p>
+                        <input type="text" placeholder="MM" style="width: 45%;">
+                        <input type="text" placeholder="YY" style="width: 45%;">
+                    </div>
+                    <div style="width: 49%; display: inline-block;">
+                        <p>CVC</p>
+                        <input type="text" placeholder="e.g. 123">
+                    </div>
+                    <button>Confirm</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
